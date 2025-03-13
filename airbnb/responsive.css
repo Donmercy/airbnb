@@ -1,0 +1,122 @@
+
+  
+  /* Responsive Design */
+  /* @media (max-width: 968px) {
+      .menu-toggle {
+          display: block;
+      }
+  
+      .nav-links {
+          position: fixed;
+          top: 0;
+          right: -100%;
+          height: 100vh;
+          width: 70%;
+          max-width: 300px;
+          background: white;
+          flex-direction: column;
+          padding: 80px 20px;
+          transition: 0.3s ease-in-out;
+          box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+      }
+   */
+      /* .nav-links.active {
+          right: 0;
+      } */
+  
+      /* .dropdown-content {
+          position: static;
+          box-shadow: none;
+          padding-left: 1rem;
+      }
+   */
+      /* .nav-links li {
+          margin: 1rem 0;
+          color: tomato;
+      }
+  } */
+  
+  @media (max-width: 576px) {
+    
+      
+  }
+  
+@media (max-width: 768px) {
+  
+   
+
+    .logo h3 {
+        font-size: 1.5rem;
+    }
+
+    .header {
+        padding: auto;
+        margin-bottom: 15rem;
+    }
+    .content button {
+        margin-bottom: 27px;
+    }
+    .content h1 {
+        font-size: 2rem;
+    }
+    .content p {
+        font-size: 14px;
+       text-wrap: wrap;
+       text-align: justify;
+    }
+}
+/* Mobile Navigation Styles */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+        color: #fff;
+    }
+
+    .nav-links {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        height: 100vh;
+        width: 70%;
+        max-width: 300px;
+        background: #151414;
+        flex-direction: column;
+        padding: 80px 20px;
+        transition: 0.3s ease-in-out;
+        z-index: 999;
+    }
+
+    .nav-links.active {
+        right: 0;
+    }
+
+    .nav-links li {
+        margin: 1.5rem 0;
+    }
+
+    .nav-links li a {
+        color: #fff;
+        font-size: 1.1rem;
+    }
+
+    .dropdown-content {
+        background: #151414;
+        min-width: 100%;
+        box-shadow: none;
+        padding-left: 0;
+        margin-top: 0;
+    }
+
+    .dropdown-content a {
+        color: #b3b3b3;
+    }
+
+    .logo h3 {
+        font-size: 1.5rem;
+    }
+
+    .header {
+        padding: auto;
+        margin-bottom: 15rem;
+    }
+}

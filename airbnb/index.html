@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>airbnb</title>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cinzel|Fauna+One">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" 
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" 
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+     <header class="header">
+
+          
+<div class="overlay"></div>
+  
+<nav class="navbar" id="navbar"> 
+
+      <div class="logo">
+    
+            <h3>   <i class="fa fa-house"></i>Dawn</h3>
+      </div>
+
+    <!-- Add this button -->
+    <div class="menu-toggle">
+        <i class="fas fa-bars"></i>
+    </div>
+
+    <ul class="nav-links">
+        <li class="dropdown">
+            <a href="#" class="dropbtn">Home <i class="fa fa-caret-down"></i></a>
+            <div class="dropdown-content">
+                <a href="#">Beach Resort & Spa</a>
+                <a href="#">Mediterranean Beach Hotel</a>
+                <a href="#">Tropical bungalow</a>
+                <a href="#">Beach house</a>
+                <a href="">modern villa</a>
+                <a href="">hotel & marine club</a>
+                <a href="">Boutique</a>
+                <a href="">home support RTL</a>
+                <a href="">classic hotel</a>
+            </div>
+        </li>
+
+        <li><a href="#room">rooms</a></li>
+        <li><a href="#back">backend demo</a></li>
+        <li class="dropdown">
+            <a href="#" class="dropbtn">Features <i class="fa fa-caret-down"></i></a>
+            <div class="dropdown-content">
+                <a href="#properties">Properties</a>
+                <a href="#listings">Listings</a>
+                <a href="#rentals">Rentals</a>
+            </div>
+        </li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+   
+
+<div class="content">
+      <h1>Find your perfect place to stay</h1>
+      <p>From the best beach houses to the best hotel deals</p>
+      <button id="openModalBtn">book now</button>
+</div>
+
+
+
+<div id="bookingModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Book Your Stay</h2>
+        <form id="bookingForm">
+            <div class="form-group">
+                <input type="text" placeholder="Full Name" required>
+            </div>
+            <div class="form-group">
+                <input type="email" placeholder="Email" required>
+            </div>
+            <div class="form-group">
+                <label for="">check-in</label>
+                <input type="date" placeholder="Check-in Date" required>
+            </div>
+            <div class="form-group">
+                <label for="">check-out</label>
+                <input type="date" placeholder="Check-out Date" required>
+            </div>
+            <div class="form-group">
+                <select required>
+                    <option value="">Number of Guests</option>
+                    <option value="1">1 Guest</option>
+                    <option value="2">2 Guests</option>
+                    <option value="3">3 Guests</option>
+                    <option value="4">4+ Guests</option>
+                </select>
+            </div>
+            <button type="submit" class="submit-btn">Confirm Booking</button>
+        </form>
+    </div>
+</div>
+
+
+<section class="availability">
+    <div class="search-container">
+        <div class="search-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <input type="text" placeholder="Where are you going?">
+        </div>
+        <div class="search-item">
+            <i class="far fa-calendar-alt"></i>
+            <input type="date" placeholder="Check-in">
+        </div>
+        <div class="search-item">
+            <i class="far fa-calendar-alt"></i>
+            <input type="date" placeholder="Check-out">
+        </div>
+        <div class="search-item">
+            <i class="fas fa-user-friends"></i>
+            <select>
+                <option value="">Guests</option>
+                <option value="1">1 Guest</option>
+                <option value="2">2 Guests</option>
+                <option value="3">3 Guests</option>
+                <option value="4">4+ Guests</option>
+            </select>
+        </div>
+        <button class="search-btn">
+            <i class="fas fa-search"></i> Availability
+        </button>
+    </div>
+</section>
+
+</header>
+
+
+<section class="rooms-section">
+    <div class="rooms-container">
+        <!-- Card 1 -->
+        <div class="room-card">
+            <div class="room-image">
+                <img src="img/room1.jpeg" alt="Luxury Suite">
+                <span class="room-tag">Popular</span>
+            </div>
+            <div class="room-details">
+                <div class="room-header">
+                    <h3>Luxury Ocean Suite</h3>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <span>4.9</span>
+                    </div>
+                </div>
+                <p class="room-location"><i class="fas fa-map-marker-alt"></i> Beachfront</p>
+                <p class="room-amenities">
+                    <span><i class="fas fa-wifi"></i> WiFi</span>
+                    <span><i class="fas fa-swimming-pool"></i> Pool</span>
+                    <span><i class="fas fa-coffee"></i> Breakfast</span>
+                </p>
+                <div class="room-price">
+                    <span class="price">$299</span>
+                    <span class="per-night">per night</span>
+                </div>
+                <button class="book-btn">View Details</button>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="room-card">
+            <div class="room-image">
+                <img src="img/room2.jpeg" alt="Garden Villa">
+                <span class="room-tag">Best Value</span>
+            </div>
+            <div class="room-details">
+                <div class="room-header">
+                    <h3>Garden Villa</h3>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <span>4.7</span>
+                    </div>
+                </div>
+                <p class="room-location"><i class="fas fa-map-marker-alt"></i> Garden View</p>
+                <p class="room-amenities">
+                    <span><i class="fas fa-wifi"></i> WiFi</span>
+                    <span><i class="fas fa-hot-tub"></i> Jacuzzi</span>
+                    <span><i class="fas fa-utensils"></i> Kitchen</span>
+                </p>
+                <div class="room-price">
+                    <span class="price">$199</span>
+                    <span class="per-night">per night</span>
+                </div>
+                <button class="book-btn">View Details</button>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="room-card">
+            <div class="room-image">
+                <img src="img/room3.jpeg" alt="Penthouse Suite">
+                <span class="room-tag">Luxury</span>
+            </div>
+            <div class="room-details">
+                <div class="room-header">
+                    <h3>Penthouse Suite</h3>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <span>5.0</span>
+                    </div>
+                </div>
+                <p class="room-location"><i class="fas fa-map-marker-alt"></i> Top Floor</p>
+                <p class="room-amenities">
+                    <span><i class="fas fa-wifi"></i> WiFi</span>
+                    <span><i class="fas fa-glass-martini"></i> Bar</span>
+                    <span><i class="fas fa-spa"></i> Spa</span>
+                </p>
+                <div class="room-price">
+                    <span class="price">$499</span>
+                    <span class="per-night">per night</span>
+                </div>
+                <button class="book-btn">View Details</button>
+            </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="room-card">
+            <div class="room-image">
+                <img src="img/room4.jpeg" alt="Family Suite">
+                <span class="room-tag">Family</span>
+            </div>
+            <div class="room-details">
+                <div class="room-header">
+                    <h3>Family Suite</h3>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <span>4.8</span>
+                    </div>
+                </div>
+                <p class="room-location"><i class="fas fa-map-marker-alt"></i> Pool View</p>
+                <p class="room-amenities">
+                    <span><i class="fas fa-wifi"></i> WiFi</span>
+                    <span><i class="fas fa-child"></i> Kids Club</span>
+                    <span><i class="fas fa-tv"></i> Smart TV</span>
+                </p>
+                <div class="room-price">
+                    <span class="price">$349</span>
+                    <span class="per-night">per night</span>
+                </div>
+                <button class="book-btn">View Details</button>
+            </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="room-card">
+            <div class="room-image">
+                <img src="img/room5.jpeg" alt="Beach Bungalow">
+                <span class="room-tag">Private</span>
+            </div>
+            <div class="room-details">
+                <div class="room-header">
+                    <h3>Beach Bungalow</h3>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <span>4.9</span>
+                    </div>
+                </div>
+                <p class="room-location"><i class="fas fa-map-marker-alt"></i> Private Beach</p>
+                <p class="room-amenities">
+                    <span><i class="fas fa-wifi"></i> WiFi</span>
+                    <span><i class="fas fa-umbrella-beach"></i> Beach</span>
+                    <span><i class="fas fa-cocktail"></i> Bar</span>
+                </p>
+                <div class="room-price">
+                    <span class="price">$399</span>
+                    <span class="per-night">per night</span>
+                </div>
+                <button class="book-btn">View Details</button>
+            </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="room-card">
+            <div class="room-image">
+                <img src="img/room6.jpeg" alt="Executive Suite">
+                <span class="room-tag">Business</span>
+            </div>
+            <div class="room-details">
+                <div class="room-header">
+                    <h3>Executive Suite</h3>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <span>4.8</span>
+                    </div>
+                </div>
+                <p class="room-location"><i class="fas fa-map-marker-alt"></i> City View</p>
+                <p class="room-amenities">
+                    <span><i class="fas fa-wifi"></i> WiFi</span>
+                    <span><i class="fas fa-briefcase"></i> Office</span>
+                    <span><i class="fas fa-concierge-bell"></i> Service</span>
+                </p>
+                <div class="room-price">
+                    <span class="price">$279</span>
+                    <span class="per-night">per night</span>
+                </div>
+                <button class="book-btn">View Details</button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- modal page  -->
+    <div id="roomDetailModal" class="room-detail-modal">
+        <div class="room-detail-content">
+            <span class="close-detail">&times;</span>
+            
+            <!-- Image Gallery -->
+            <div class="room-gallery">
+                <div class="main-image">
+                    <img id="mainRoomImage" src="" alt="Room View">
+                </div>
+                <div class="image-thumbnails">
+                    <img class="thumb" src="img/room1.jpeg" alt="Room View 1">
+                    <img class="thumb" src="img/room2.jpeg" alt="Room View 2">
+                    <img class="thumb" src="img/room3.jpeg" alt="Room View 3">
+                </div>
+            </div>
+    
+            <!-- Room Information -->
+            <div class="room-info">
+                <div class="room-header-info">
+                    <h2 id="roomTitle"></h2>
+                    <div class="room-meta">
+                        <span class="room-rating">
+                            <i class="fas fa-star"></i>
+                            <span id="roomRating"></span>
+                        </span>
+                        <span class="room-price-large">
+                            <span id="roomPrice"></span>
+                            <span class="per-night">/ night</span>
+                        </span>
+                    </div>
+                </div>
+    
+                <!-- Room Features -->
+                <div class="features-grid">
+                    <div class="feature">
+                        <i class="fas fa-bed"></i>
+                        <span>King Size Bed</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-bath"></i>
+                        <span>En-suite Bathroom</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-wifi"></i>
+                        <span>High-Speed WiFi</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-tv"></i>
+                        <span>55" Smart TV</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-snowflake"></i>
+                        <span>Climate Control</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-coffee"></i>
+                        <span>Coffee Machine</span>
+                    </div>
+                </div>
+    
+                <!-- Room Description -->
+                <div class="room-description">
+                    <h3>About this room</h3>
+                    <p id="roomDescription"></p>
+                </div>
+    
+                <!-- Booking Section -->
+                <div class="booking-section">
+                    <button class="book-now-btn" id="openModalBtn"> Book Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-section">
+            <h4>About Dawn</h4>
+            <p>Discover luxury accommodations worldwide. We provide exceptional stays and experiences for every traveler.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#rooms">Our Rooms</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h4>Contact Info</h4>
+            <ul class="contact-info">
+                <li><i class="fas fa-map-marker-alt"></i> 123 Beach Road, Miami, FL</li>
+                <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                <li><i class="fas fa-envelope"></i> info@dawnhotels.com</li>
+                <li><i class="fas fa-clock"></i> 24/7 Customer Support</li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h4>Newsletter</h4>
+            <p>Subscribe to our newsletter for special offers and updates.</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit"><i class="fas fa-paper-plane"></i></button>
+            </form>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2024 Dawn Hotels. All rights reserved.</p>
+        <div class="footer-bottom-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Sitemap</a>
+        </div>
+    </div>
+</footer>
+<div class="gtranslate_wrapper"></div>
+<script>window.gtranslateSettings = {"default_language":"en","detect_browser_language":true,"languages":["en","fr","it","es","de","nl"],"wrapper_selector":".gtranslate_wrapper"}</script>
+<script src="https://cdn.gtranslate.net/widgets/latest/float.js" defer></script>
+
+      <script src="script.js" defer></script>
+</body>
+</html>
